@@ -1,0 +1,148 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    
+}
+
+header{
+    background-image: url(https://api.reliasoftware.com/uploads/web_development_is_important_176fa0618e.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+   
+
+}
+
+footer{
+    text-align: center;
+    padding: 20px 20px;
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin:0;
+    font-size: 2.5em;
+    color: #8c86f8;
+    text-align: center;
+    padding: 50px 20px;
+    /* margin-bottom: 20px; */
+}
+
+header p {
+    margin: 15px 0;
+    font-size: 1.2em;
+    color: #f4f1f1;
+    text-align: center;
+    padding: 50px 20px;
+    /* margin-bottom: 20px; */
+}
+
+/* Team Section */
+.team {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+    border: 2px rgb(188, 9, 228) solid;
+}
+
+.team-section {
+    margin-bottom: 40px;
+}
+
+.team-section h3 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #6c63ff;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.team-section h3::before,
+.team-section h3::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 3px;
+    background-color: #6c63ff;
+}
+
+.team-section h3::before {
+    left: 0;
+}
+
+.team-section h3::after {
+    right: 0;
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Member Card */
+.member {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.member h4 {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.member p {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 0;
+}
+
+/* Hover Effect */
+.member:hover {
+    transform: translateY(-10px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .team h2 {
+        font-size: 1.5em;
+    }
+}
